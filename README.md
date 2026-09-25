@@ -2,9 +2,9 @@
 # Proyecto del curso: Animando una Skip List  - Algoritmos y Estructuras de Datos CS2023, UTEC (2026-2).
 
 ## Integrantes
-- [Ariel Mathias Fernando Choque Marcelo] — Implementación en C++
-- [Rodrigo de Santa María Anco Ito] — Animación en Python/Manim
-- [Gabriel Saavedra Peralta] — Guion, informe y coordinación
+- Ariel Mathias Fernando Choque Marcelo — Implementación en C++
+- Rodrigo de Santa María Anco Ito — Animación en Python/Manim
+- Gabriel Saavedra Peralta — Guion, informe y coordinación
 
 ## Descripción
 Implementación de una **Skip List** en C++ y animación educativa de su funcionamiento
