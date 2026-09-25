@@ -18,7 +18,9 @@ en un archivo CSV, el cual es leído e interpretado por el script de animación 
 ## Estructura del repositorio
 
 /cpp → implementación de la Skip List en C++
+
 /python → parser del CSV y animación en Manim
+
 /output → CSV de eventos generado y video final
 
 
