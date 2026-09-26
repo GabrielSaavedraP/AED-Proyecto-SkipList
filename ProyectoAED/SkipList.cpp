@@ -173,22 +173,30 @@ public:
 int main() {
     srand(static_cast<unsigned>(time(0)));
 
-    // Altura máxima de 3 niveles, se generará el archivo animacion.csv
+
     SkipList<int> miLista(3, "animacion.csv");
 
-    // Casos de Inserción
-    miLista.insertElement(10);
-    miLista.insertElement(20);
-    miLista.insertElement(5);
 
-    // Caso Borde: Buscar un elemento que no existe
-    miLista.searchElement(15);
+    int valores[] = {23, 5, 41, 12, 8, 34, 19, 27};
+
+    for (int v : valores) {
+        miLista.insertElement(v);
+    }
+
+    // Caso extre o: insertar un valor duplicado (no debe crear nodo nuevo)
+    miLista.insertElement(23);
 
     // Búsqueda exitosa
-    miLista.searchElement(20);
+    miLista.searchElement(19);
 
-    // Eliminación
-    miLista.removeElement(10);
+    // Caso extremo: búsqueda de un valor que no existe
+    miLista.searchElement(99);
+
+    // Eliminación exitosa
+    miLista.removeElement(12);
+
+    // Caso extremo: eliminar un valor que no existe
+    miLista.removeElement(100);
 
     cout << "El archivo CSV ha sido generado con todas las operaciones." << endl;
     return 0;
