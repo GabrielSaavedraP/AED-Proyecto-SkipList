@@ -48,10 +48,10 @@ O usa el botón "Code -> Download ZIP" desde GitHub y descomprime la carpeta.
 1. Abre la carpeta `/python` en PyCharm (o tu IDE favorito).
 2. Asegúrate de tener instalada la librería `manim` (`pip install manim`).
 3. Ejecuta manualmente el script de animación desde el IDE, indicando el archivo `events.csv` generado en el paso anterior como entrada.
-4. También puedes ejecutarlo desde tu terminal dentro del IDE: 
-  a. Abre la terminal dentro del IDE:
-  b. Si quieres un video de baja resolución, pega esto en la terminal: manim -pql skiplist_animation.py SkipList
-     Si quieres que sea en alta resolución, pega esto: manim -pqh skiplist_animation.py SkipList
+4. También puedes ejecutarlo desde tu terminal dentro del IDE:
+Abre la terminal dentro del IDE:
+Si quieres un video de baja resolución, pega esto en la terminal: `manim -pql skiplist_animation.py SkipList`
+Si quieres que sea en alta resolución, pega esto: `manim -pqh skiplist_animation.py SkipList`
 6. El video se generará dentro de la carpeta `python/media/videos/...`.
 
 ## Formato del CSV de eventos
