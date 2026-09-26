@@ -71,33 +71,31 @@ iteracion,operacion,valor,accion,nivel,nodo_actual,nodo_siguiente,resultado
 | `nodo_siguiente` | Nodo siguiente evaluado (vacío si es el final) |
 | `resultado` | Resultado del evento |
 
-### Tipos de `accion`
+### Tipos de `Accion`
 
-| Acción | Descripción | `resultado` posible |
-|---|---|---|
-| `sorteo_nivel` | Se decide aleatoriamente si el nodo sube un nivel más | `sube_nivel` / `se_detiene` |
-| `comparar` | Se compara `nodo_actual`/`nodo_siguiente` contra `valor` | `avanza` / `baja` / `inserta_aqui` |
-| `recorrer` | El algoritmo pasa por un nodo existente (search/remove) | — |
-| `insertar_nodo` | Se crea y enlaza un nodo nuevo en ese nivel | — |
-| `eliminar_nodo` | Se desconecta un nodo en ese nivel | — |
-| `encontrado` | Resultado final positivo de `search` | — |
-| `no_encontrado` | Resultado final negativo de `search`/`remove` | — |
-| `fin` | Fin de la operación completa | — |
+| Acción | Descripción |
+|---|---|
+| `INICIAR` | Inicio de la operación (insertar, buscar o eliminar) |
+| `AVANZAR` | El algoritmo avanza porque el valor siguiente es menor al buscado |
+| `BAJAR` | El algoritmo baja de nivel al no poder avanzar más en el actual |
+| `CALCULAR_NIVEL` | Se sortea aleatoriamente hasta qué nivel sube el nuevo nodo |
+| `INSERTAR_NODO` | Se crea el nodo nuevo |
+| `ACTUALIZAR_PUNTEROS` | Se enlaza el nodo nuevo con sus vecinos en un nivel |
+| `ELIMINAR_NODO` | Se encuentra y desconecta el nodo a eliminar |
+| `FIN_EXITO` | La operación terminó exitosamente |
+| `FIN_FALLO` | La operación no encontró el valor (o era un duplicado) |
 
-### Ejemplo (insertar 17)
+### Ejemplo real (insertar 5, con la lista ya conteniendo 23)
 
 ```csv
-iteracion,operacion,valor,accion,nivel,nodo_actual,nodo_siguiente,resultado
-1,insert,17,sorteo_nivel,1,,,sube_nivel
-2,insert,17,sorteo_nivel,2,,,sube_nivel
-3,insert,17,sorteo_nivel,3,,,se_detiene
-4,insert,17,comparar,2,6,,baja
-5,insert,17,comparar,1,6,12,avanza
-6,insert,17,comparar,1,12,,baja
-7,insert,17,comparar,0,12,19,inserta_aqui
-8,insert,17,insertar_nodo,0,17,,
-9,insert,17,insertar_nodo,1,17,,
-10,insert,17,fin,,,,
+Iteracion,Operacion,Valor,Accion,Nivel,Nodo_Actual,Nodo_Siguiente,Resultado
+8,INSERTAR,5,INICIAR,1,HEAD,23,INICIO_OPERACION
+9,INSERTAR,5,BAJAR,1,HEAD,23,NIVEL_COMPLETADO
+10,INSERTAR,5,BAJAR,0,HEAD,23,NIVEL_COMPLETADO
+11,INSERTAR,5,CALCULAR_NIVEL,0,NULL,NULL,NIVEL_GENERADO_0
+12,INSERTAR,5,INSERTAR_NODO,0,5,NULL,NODO_CREADO
+13,INSERTAR,5,ACTUALIZAR_PUNTEROS,0,HEAD,5,ENLACE_LISTO
+14,INSERTAR,5,FIN_EXITO,1,5,NULL,OPERACION_COMPLETA
 ```
 
 ## Video final
