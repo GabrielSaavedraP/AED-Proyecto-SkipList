@@ -26,9 +26,8 @@ en un archivo CSV, el cual es leído e interpretado por el script de animación 
 
 ## Requisitos
 - C++17 o superior 
-- Python 3, con las siguientes librerías:
+- Python 3, con las siguiente librería:
   - manim
-  - [PLACEHOLDER: otras librerías si llegamos a agregar]
 
 ## Cómo compilar y ejecutar
 
@@ -41,14 +40,19 @@ O usa el botón "Code -> Download ZIP" desde GitHub y descomprime la carpeta.
 
 ### 2. Parte C++ (implementación de la Skip List)
 1. Abre la carpeta `/cpp` en CLion (o tu IDE favorito)
-2. Compila y ejecuta el proyecto manualmente desde el IDE.
-3. Al ejecutarlo, se generará el archivo `output/events.csv` con los eventos de la ejecución.
+2. En el Repo encontrarás un main ya hecho en el archivo SkipList.cpp. Puedes modificarlo a tu gusto o dejarlo tal como está, pues ese caso fue el que se usó en el video demostrativo de la Skip List.
+3. Compila y ejecuta el proyecto manualmente desde el IDE.
+4. Al ejecutarlo, se generará el archivo `output/events.csv` con los eventos de la ejecución.
 
 ### 3. Parte Python (animación en Manim)
 1. Abre la carpeta `/python` en PyCharm (o tu IDE favorito).
 2. Asegúrate de tener instalada la librería `manim` (`pip install manim`).
 3. Ejecuta manualmente el script de animación desde el IDE, indicando el archivo `events.csv` generado en el paso anterior como entrada.
-4. El video se generará dentro de la carpeta `python/media/videos/...`.
+4. También puedes ejecutarlo desde tu terminal dentro del IDE: 
+  a. Abre la terminal dentro del IDE:
+  b. Si quieres un video de baja resolución, pega esto en la terminal: manim -pql skiplist_animation.py SkipList
+     Si quieres que sea en alta resolución, pega esto: manim -pqh skiplist_animation.py SkipList
+6. El video se generará dentro de la carpeta `python/media/videos/...`.
 
 ## Formato del CSV de eventos
 
@@ -100,5 +104,4 @@ iteracion,operacion,valor,accion,nivel,nodo_actual,nodo_siguiente,resultado
 [PLACEHOLDER A NUESTRO VIDEO. supongo que lo subiremos en YT]
 
 ## Inspiración
-Estilo de animación inspirado en el canal [3Blue1Brown](https://www.3blue1brown.com/).
-[PLACEHOLDER SI ENCUENTRAN ALGUNA OTRA INSPIRACION CHEVERE]
+Estilo de animación inspirado en los canales y páginas webs: [3Blue1Brown](https://www.3blue1brown.com/),[Reducible](https://www.youtube.com/c/Reducible) y [VisuAlgo](https://visualgo.net/) .
