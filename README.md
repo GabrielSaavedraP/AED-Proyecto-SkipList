@@ -1,5 +1,4 @@
-
-# Proyecto del curso: Animando una Skip List  - Algoritmos y Estructuras de Datos CS2023, UTEC (2026-2).
+# Proyecto del curso: Animando una Skip List — Algoritmos y Estructuras de Datos CS2023, UTEC (2026-2)
 
 ## Integrantes
 - Ariel Mathias Fernando Choque Marcelo — Implementación en C++
@@ -17,16 +16,15 @@ en un archivo CSV, el cual es leído e interpretado por el script de animación 
 
 ## Estructura del repositorio
 
-/cpp → implementación de la Skip List en C++
-
-/python → parser del CSV y animación en Manim
-
-/output → CSV de eventos generado y video final
-
+```
+/cpp     → implementación de la Skip List en C++
+/python  → parser del CSV y animación en Manim
+/output  → CSV de eventos generado y video final
+```
 
 ## Requisitos
-- C++17 o superior 
-- Python 3, con las siguiente librería:
+- C++17 o superior
+- Python 3, con la siguiente librería:
   - manim
 
 ## Cómo compilar y ejecutar
@@ -36,11 +34,11 @@ Clona o descarga este repositorio en tu computadora:
 ```bash
 git clone https://github.com/GabrielSaavedraP/AED-Proyecto-SkipList
 ```
-O usa el botón "Code -> Download ZIP" desde GitHub y descomprime la carpeta.
+O usa el botón "Code → Download ZIP" desde GitHub y descomprime la carpeta.
 
 ### 2. Parte C++ (implementación de la Skip List)
-1. Abre la carpeta `/cpp` en CLion (o tu IDE favorito)
-2. En el Repo encontrarás un main ya hecho en el archivo SkipList.cpp. Puedes modificarlo a tu gusto o dejarlo tal como está, pues ese caso fue el que se usó en el video demostrativo de la Skip List.
+1. Abre la carpeta `/cpp` en CLion (o tu IDE favorito).
+2. En el repo encontrarás un main ya hecho en el archivo `SkipList.cpp`. Puedes modificarlo a tu gusto o dejarlo tal como está, pues ese caso fue el que se usó en el video demostrativo de la Skip List.
 3. Compila y ejecuta el proyecto manualmente desde el IDE.
 4. Al ejecutarlo, se generará el archivo `output/events.csv` con los eventos de la ejecución.
 
@@ -48,28 +46,28 @@ O usa el botón "Code -> Download ZIP" desde GitHub y descomprime la carpeta.
 1. Abre la carpeta `/python` en PyCharm (o tu IDE favorito).
 2. Asegúrate de tener instalada la librería `manim` (`pip install manim`).
 3. Ejecuta manualmente el script de animación desde el IDE, indicando el archivo `events.csv` generado en el paso anterior como entrada.
-4. También puedes ejecutarlo desde tu terminal dentro del IDE:
-Abre la terminal dentro del IDE:
-Si quieres un video de baja resolución, pega esto en la terminal: `manim -pql skiplist_animation.py SkipList`
-Si quieres que sea en alta resolución, pega esto: `manim -pqh skiplist_animation.py SkipList`
-6. El video se generará dentro de la carpeta `python/media/videos/...`.
+4. También puedes ejecutarlo desde la terminal integrada del IDE:
+   - Video de baja resolución: `manim -pql skiplist_animation.py SkipList`
+   - Video de alta resolución: `manim -pqh skiplist_animation.py SkipList`
+5. El video se generará dentro de la carpeta `python/media/videos/...`.
 
 ## Formato del CSV de eventos
 
 Columnas:
-iteracion,operacion,valor,accion,nivel,nodo_actual,nodo_siguiente,resultado
-
+```
+Iteracion,Operacion,Valor,Accion,Nivel,Nodo_Actual,Nodo_Siguiente,Resultado
+```
 
 | Columna | Descripción |
 |---|---|
-| `iteracion` | Número secuencial del evento (orden de reproducción) |
-| `operacion` | `insert`, `search`, o `remove` |
-| `valor` | Valor con el que estemos trabajando |
-| `accion` | Tipo de evento (ver tabla abajo) |
-| `nivel` | Nivel de la Skip List donde ocurre el evento |
-| `nodo_actual` | Nodo donde está "parado" el algoritmo en ese momento |
-| `nodo_siguiente` | Nodo siguiente evaluado (vacío si es el final) |
-| `resultado` | Resultado del evento |
+| `Iteracion` | Número secuencial del evento (orden de reproducción) |
+| `Operacion` | `INSERTAR`, `BUSCAR`, o `ELIMINAR` |
+| `Valor` | Valor con el que estemos trabajando |
+| `Accion` | Tipo de evento (ver tabla abajo) |
+| `Nivel` | Nivel de la Skip List donde ocurre el evento |
+| `Nodo_Actual` | Nodo donde está "parado" el algoritmo en ese momento |
+| `Nodo_Siguiente` | Nodo siguiente evaluado (vacío si es el final) |
+| `Resultado` | Resultado del evento |
 
 ### Tipos de `Accion`
 
@@ -99,7 +97,8 @@ Iteracion,Operacion,Valor,Accion,Nivel,Nodo_Actual,Nodo_Siguiente,Resultado
 ```
 
 ## Video final
-[PLACEHOLDER A NUESTRO VIDEO. supongo que lo subiremos en YT]
+[PLACEHOLDER A NUESTRO VIDEO. Se subirá a YouTube no listado]
 
 ## Inspiración
-Estilo de animación inspirado en los canales y páginas webs: [3Blue1Brown](https://www.3blue1brown.com/),[Reducible](https://www.youtube.com/c/Reducible) y [VisuAlgo](https://visualgo.net/).
+Estilo de animación inspirado en los canales y páginas web: [3Blue1Brown](https://www.3blue1brown.com/), [Reducible](https://www.youtube.com/c/Reducible) y [VisuAlgo](https://visualgo.net/).
+```
