@@ -104,4 +104,4 @@ iteracion,operacion,valor,accion,nivel,nodo_actual,nodo_siguiente,resultado
 [PLACEHOLDER A NUESTRO VIDEO. supongo que lo subiremos en YT]
 
 ## Inspiración
-Estilo de animación inspirado en los canales y páginas webs: [3Blue1Brown](https://www.3blue1brown.com/),[Reducible](https://www.youtube.com/c/Reducible) y [VisuAlgo](https://visualgo.net/) .
+Estilo de animación inspirado en los canales y páginas webs: [3Blue1Brown](https://www.3blue1brown.com/),[Reducible](https://www.youtube.com/c/Reducible) y [VisuAlgo](https://visualgo.net/).
