@@ -97,7 +97,7 @@ Iteracion,Operacion,Valor,Accion,Nivel,Nodo_Actual,Nodo_Siguiente,Resultado
 ```
 
 ## Video final
-[PLACEHOLDER A NUESTRO VIDEO. Se subirá a YouTube no listado]
+https://youtu.be/UV59AYh3784
 
 ## Inspiración
 Estilo de animación inspirado en los canales y páginas web: [3Blue1Brown](https://www.3blue1brown.com/), [Reducible](https://www.youtube.com/c/Reducible) y [VisuAlgo](https://visualgo.net/).
