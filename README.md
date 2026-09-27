@@ -101,4 +101,3 @@ https://youtu.be/UV59AYh3784
 
 ## Inspiración
 Estilo de animación inspirado en los canales y páginas web: [3Blue1Brown](https://www.3blue1brown.com/), [Reducible](https://www.youtube.com/c/Reducible) y [VisuAlgo](https://visualgo.net/).
-```
